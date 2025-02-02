@@ -1,0 +1,109 @@
+.dashboard {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .main {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    flex: 2;
+  }
+  
+  .statCard {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .statCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .statIcon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-right: 20px;
+  }
+  
+  .statInfo h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .statInfo p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 5px 0 0;
+  }
+  
+  .recentActivity {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .recentActivity h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .recentActivity ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recentActivity li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 0.9rem;
+    color: #34495e;
+  }
+  
+  .recentActivity li:last-child {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  
+    .statsGrid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  
