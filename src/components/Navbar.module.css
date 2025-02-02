@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar input {
+  padding: 8px 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.navIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #2c3e50;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.iconButton:hover {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .searchBar input {
+    width: 150px;
+  }
+}
+
